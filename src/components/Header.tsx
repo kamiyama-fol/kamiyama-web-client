@@ -61,7 +61,7 @@ export default function Header() {
                         <ul className="flex flex-col items-center space-y-8 list-none text-2xl">
                             <li><Link href="/" className="hover:text-gray-400" onClick={handleLinkClick}>TOP</Link></li>
                             <li><Link href="/profile" className="hover:text-gray-400" onClick={handleLinkClick}>PROFILE</Link></li>
-                            <li><Link href="#" className="hover:text-gray-400" onClick={handleLinkClick}>SKILLS</Link></li>
+                            <li><Link href="/media" className="hover:text-gray-400" onClick={handleLinkClick}>MEDIA</Link></li>
                             <li><Link href="/contact" className="hover:text-gray-400" onClick={handleLinkClick}>CONTACT</Link></li>
                         </ul>
                     </nav>
