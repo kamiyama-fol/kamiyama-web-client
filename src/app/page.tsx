@@ -1,8 +1,14 @@
 import Image from "next/image";
 import { KamiyamaIcon } from "@/components/KamiyamaIcon";
 import FadeInSection from "@/components/FadeInSection";
-import noteImage from "@/app/assets/images/note.png";
 import Parser from "rss-parser";
+import noteImage from "@/app/assets/images/note.png";
+import ikedayaImage from "@/app/assets/images/ikedaya.png";
+import keionDevImage from "@/app/assets/images/keion.dev.png";
+import bikeImage from "@/app/assets/images/bike.jpg";
+import animalImage from "@/app/assets/images/animal.jpg";
+
+
 
 interface Article {
   title?: string;
@@ -64,26 +70,44 @@ export default async function Home() {
       </section>
 
       <section className="py-40px px-0 border-b border-gray-700 my-16">
-        <h2 className="text-3xl font-bold text-center mb-8">CONTENTS</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">ALBUM</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center">
-            <a
-              href="https://note.com/kamiyama_fol"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className="text-center mb-8">
+
               <Image
-                src={noteImage}
+                src={ikedayaImage}
                 alt="note"
                 width={400}
                 height={400}
                 className="w-full aspect-square object-cover"
               />
-              <p className="mt-2">もっと見る</p>
-              <p className="text-gray-500 dark:text-gray-400">
-                noteのプロフィールページへ
-              </p>
-            </a>
+          </div>
+          <div className="text-center">
+              <Image
+                src={keionDevImage}
+                alt="note"
+                width={400}
+                height={400}
+                className="w-full aspect-square object-cover"
+              />
+          </div>
+          <div className="text-center">
+              <Image
+                src={animalImage}
+                alt="note"
+                width={400}
+                height={400}
+                className="w-full aspect-square object-cover"
+              />
+          </div>
+          <div className="text-center">
+              <Image
+                src={bikeImage}
+                alt="note"
+                width={400}
+                height={400}
+                className="w-full aspect-square object-cover"
+              />
           </div>
         </div>
       </section>
