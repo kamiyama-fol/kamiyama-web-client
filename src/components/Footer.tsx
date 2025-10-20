@@ -14,7 +14,7 @@ export default function Footer() {
                     )}
                 </a>
             ))}
-        </div>
+            </div>
             <p className="text-gray-500 dark:text-gray-400">&copy; 2025 Kamiyama</p>
       </footer>
     );

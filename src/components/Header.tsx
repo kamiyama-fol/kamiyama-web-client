@@ -29,7 +29,6 @@ export default function Header() {
                     <ul className="flex space-x-8 list-none">
                         <li><Link href="/" className="hover:text-gray-400">TOP</Link></li>
                         <li><Link href="/profile" className="hover:text-gray-400">PROFILE</Link></li>
-                        <li><Link href="/media" className="hover:text-gray-400">MEDIA</Link></li>
                         <li><Link href="/contact" className="hover:text-gray-400">CONTACT</Link></li>
                     </ul>
                 </nav>
@@ -61,7 +60,6 @@ export default function Header() {
                         <ul className="flex flex-col items-center space-y-8 list-none text-2xl">
                             <li><Link href="/" className="hover:text-gray-400" onClick={handleLinkClick}>TOP</Link></li>
                             <li><Link href="/profile" className="hover:text-gray-400" onClick={handleLinkClick}>PROFILE</Link></li>
-                            <li><Link href="/media" className="hover:text-gray-400" onClick={handleLinkClick}>MEDIA</Link></li>
                             <li><Link href="/contact" className="hover:text-gray-400" onClick={handleLinkClick}>CONTACT</Link></li>
                         </ul>
                     </nav>
