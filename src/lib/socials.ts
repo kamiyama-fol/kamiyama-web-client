@@ -1,11 +1,13 @@
-import { FaYoutube, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaYoutube, FaTwitter, FaGithub, FaTiktok } from "react-icons/fa";
 import noteImage from "@/app/assets/images/note.png";
 import youtubeImage from "@/app/assets/images/youtube.png";
 import twitterImage from "@/app/assets/images/twitter.png";
 import githubImage from "@/app/assets/images/github.png";
+import tiktokImage from "@/app/assets/images/tiktok.png";
 import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 import React from "react";
+
 
 export interface Social {
   name: string;
@@ -47,6 +49,14 @@ export const socials: Social[] = [
     image: twitterImage,
     alt: "twitter",
     pageLabel: "Twitter",
+  },
+  {
+    name: "TikTok",
+    href: "https://www.tiktok.com/@kamiyama_fol",
+    icon: FaTiktok,
+    image: tiktokImage,
+    alt: "tiktok",
+    pageLabel: "TikTok",
   },
 ];
 
