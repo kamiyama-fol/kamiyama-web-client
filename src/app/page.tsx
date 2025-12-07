@@ -1,14 +1,7 @@
-import Image from "next/image";
 import { KamiyamaIcon } from "@/components/KamiyamaIcon";
 import FadeInSection from "@/components/FadeInSection";
 import Parser from "rss-parser";
 import noteImage from "@/app/assets/images/note.png";
-import ikedayaImage from "@/app/assets/images/ikedaya.png";
-import keionDevImage from "@/app/assets/images/keion.dev.png";
-import bikeImage from "@/app/assets/images/bike.jpg";
-import animalImage from "@/app/assets/images/animal.jpg";
-
-
 
 interface Article {
   title?: string;
@@ -57,59 +50,17 @@ export default async function Home() {
               rel="noopener noreferrer"
               key={index}
             >
-            <li className="border-b border-gray-200 dark:border-gray-700 pb-4">
-              <span className="text-gray-500 dark:text-gray-400">{article.pubDate
+              <li className="border-b border-gray-200 dark:border-gray-700 pb-4">
+                <span className="text-gray-500 dark:text-gray-400">
+                  {article.pubDate
                     ? new Date(article.pubDate).toLocaleDateString()
-                    : ""}</span>
-              <p>{article.title}</p>
-            </li>
+                    : ""}
+                </span>
+                <p>{article.title}</p>
+              </li>
             </a>
           ))}
-
         </ul>
-      </section>
-
-      <section className="py-40px px-0 border-b border-gray-700 my-16">
-        <h2 className="text-3xl font-bold text-center mb-8">PICTURES</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center mb-8">
-
-              <Image
-                src={ikedayaImage}
-                alt="note"
-                width={400}
-                height={400}
-                className="w-full aspect-square object-cover"
-              />
-          </div>
-          <div className="text-center">
-              <Image
-                src={keionDevImage}
-                alt="note"
-                width={400}
-                height={400}
-                className="w-full aspect-square object-cover"
-              />
-          </div>
-          <div className="text-center">
-              <Image
-                src={animalImage}
-                alt="note"
-                width={400}
-                height={400}
-                className="w-full aspect-square object-cover"
-              />
-          </div>
-          <div className="text-center">
-              <Image
-                src={bikeImage}
-                alt="note"
-                width={400}
-                height={400}
-                className="w-full aspect-square object-cover"
-              />
-          </div>
-        </div>
       </section>
     </main>
   );
