@@ -9,6 +9,9 @@ import FadeInSection from "@/components/FadeInSection";
 export const metadata: Metadata = {
   title: "Kamiyama Official Website",
   description: "Kamiyama Official Website",
+  other: {
+    "google-adsense-account": "ca-pub-1542436681572530",
+  },
 };
 
 export default function RootLayout({
@@ -18,17 +21,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <body className="bg-white dark:bg-gray-900 dark:text-white">
-        <div className="max-w-[980px] justify-between border-b border-solid border-[#333] mx-auto  px-4 min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
-          <Providers>
-            <Header />
-            <FadeInSection className="py-0 px-0 my-8">
-            {children}
-            </FadeInSection>
-            <Footer />
-          </Providers>
-        </div>
-      </body>
+    <body className="bg-white dark:bg-gray-900 dark:text-white">
+    <div className="max-w-[980px] justify-between border-b border-solid border-[#333] mx-auto  px-4 min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white">
+    <Providers>
+    <Header />
+    <FadeInSection className="py-0 px-0 my-8">
+    {children}
+    </FadeInSection>
+    <Footer />
+    </Providers>
+    </div>
+    </body>
     </html>
   );
 }
