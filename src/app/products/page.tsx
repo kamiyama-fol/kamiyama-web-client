@@ -6,7 +6,7 @@ const products = [
     name: 'image-spliter',
     description:
       'twitterの画像を分割するためのアプリです。Twitterの縦に4分割された画像を簡単に作成できます。',
-    url: 'https://github.com/kamiyama-fol/image-spliter',
+    url: 'https://ximage.kamiyama-fol.com',
     language: 'TypeScript',
     languageColor: '#2b7489',
   },

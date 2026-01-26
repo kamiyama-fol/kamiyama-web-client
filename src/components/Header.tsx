@@ -29,6 +29,7 @@ export default function Header() {
                     <ul className="flex space-x-8 list-none">
                         <li><Link href="/" className="hover:text-gray-400">TOP</Link></li>
                         <li><Link href="/profile" className="hover:text-gray-400">PROFILE</Link></li>
+                        <li><Link href="/products" className="hover:text-gray-400">PRODUCTS</Link></li>
                         <li><Link href="/contact" className="hover:text-gray-400">CONTACT</Link></li>
                     </ul>
                 </nav>
