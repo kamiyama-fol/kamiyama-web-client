@@ -54,13 +54,9 @@ jobs:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
+        # basePath / images.unoptimized は next.config.ts 側で管理しているため、
+        # static_site_generator による自動注入は使わない。
         uses: actions/configure-pages@v5
-        with:
-          # Automatically inject basePath in your Next.js configuration file and disable
-          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: next
       - name: Restore cache
         uses: actions/cache@v4
         with:
